@@ -1,5 +1,7 @@
 let numOfCourse = 0;
 
+let main = document.querySelector(".main")
+
 function send()
 {
     let range = document.getElementById('range');
@@ -77,7 +79,7 @@ function send()
    let button = document.createElement('button');
    button.setAttribute("onclick", "calculate()");
    button.innerHTML = "Calculate";
-   courseGp.appendChild(button);
+   main.appendChild(button);
 
 
 }
