@@ -18,7 +18,7 @@ let tourCount = document.querySelector("#tourCount");
 db.collection('timetable').onSnapshot(snapshot => {
 
   let changes = snapshot.docs;
-  imageURL.src = changes.imageURL;
+  imageURL.src = changes.timetable;
   // userCount.textContent = changes.length
 
 });
